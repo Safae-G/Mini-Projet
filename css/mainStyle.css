@@ -1,0 +1,246 @@
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+
+#HOME {
+    width: 100%; 
+    height: 100%;
+    background-image : url(../assets/images/background-tank.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#users {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 210px;
+    height: 100%;
+}
+
+
+.listJoueur {
+    position: absolute;
+    background-image: url("../assets/images/bande-player.svg");
+    margin-top: 2px;
+    padding: 8px;
+    color: #E9E4C6;
+    font-size: medium;
+    width: 100%;
+}
+
+
+
+#fps {
+    position: absolute;
+    background-color: black;
+    border: 2px solid red;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    top: 70px;
+    right: 15px;
+    width: 60px;
+    height: 20px;
+}
+
+
+#username::placeholder {
+    color: #838C90;
+    font-weight: bold;
+}
+
+#username:hover {
+    background-color: #2f4546;
+    border: 0.1em solid #158EC6;
+    border-radius: 0.12em;
+}
+
+#username {
+    border: 1px #158EC6;
+    box-shadow: 10px 5px 5px black;
+    background-color: #4b6e70;
+    text-align: center;
+    position: fixed;
+    height: 10%;
+    width: 25%;
+    left: 37.5%;
+    top: 8%;
+    font-size: xx-large;
+    color: black;
+    outline: none;
+}
+
+
+#buttonPlay {
+    background: no-repeat center/90% url(../assets/images/bouton_Play.png);
+    position: fixed;
+    height: 15%;
+    width: 25%;
+    left: 36%;
+    top: 20%;
+}
+
+
+#buttonPlay:hover {
+    background: no-repeat center/90% url(../assets/images/bouton_Play_hover.png);
+    cursor: pointer;
+    position: fixed;
+    height: 15%;
+    width: 25%;
+    left: 36%;
+    top: 20%;
+}
+
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.buttonParam {
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#fullScreen {
+    background-image: url(../assets/images/fullScreen.svg);
+    right: 15px;
+}
+
+#fullScreen:hover {
+    background-image: url(../assets/images/fullScreen-hover.svg);
+    right: 15px;
+}
+
+#minimisedScreen {
+    background-image: url(../assets/images/minimisedScreen.svg);
+    right: 15px;
+}
+
+#minimisedScreen:hover {
+    background-image: url(../assets/images/minimisedScreen-hover.svg);
+    right: 15px;
+}
+
+#settings {
+    background-image: url(../assets/images/settings.svg);
+    right: 70px;
+}
+
+#settings:hover {
+    background-image: url(../assets/images/settings-hover.svg);
+    right: 70px;
+}
+
+#home {
+    background-image: url(../assets/images/home.svg);
+    right: 125px;
+}
+
+#home:hover {
+    background-image: url(../assets/images/home-hover.svg);
+    right: 125px;
+}
+
+#life {
+    position: absolute;
+    top: 86%;
+    left: 1.8%;
+    color: #4b6e70;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#lifeBar {
+    background-size: contain;
+    position: absolute;
+    top: 91%;
+    left: 1%;
+    width: 280px;
+    height: 150px;
+    background-image: url(../assets/images/lifeBar/lifeBar_20.png);
+    background-repeat: no-repeat;
+}
+
+
+#weapons {
+    position: absolute;
+    top: 85%;
+    right: 1%;
+    width: 220px;
+    height: 100px;
+    opacity: 0.8;
+    background-color: #4b6e70;
+}
+
+
+
+
+
+#settingsPanel {
+    display: none;
+    z-index: 1300;
+    position: fixed;
+    border: 3px solid #158EC6;
+    background-color: #4b6e70;
+    top: 8%;
+    bottom: 10%;
+    right: 25%;
+    left: 25%;
+}
+
+#closeButtonSettings {
+    background-image: url(../assets/images/close.svg);
+    right: 15px;
+}
+
+#bodyPanelSettings {
+    position: relative;
+    padding: 0;
+    margin-top: 15%;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: 10%;
+    background-color: #2f4546;
+}
+
+
+
+.buttonSettingsPanel {
+    background-color: #2f4546;
+    font-family: 'Arial';
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    color: #E9E4C6;
+    outline: none;
+    padding: 0;
+    height: 100%;
+    width: 50%;
+    border: 0;
+}
+
+#buttonSelected {
+    position: relative;
+    width: 50%;
+    height: 4%;
+    background-color: #158EC6;
+}
